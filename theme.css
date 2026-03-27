@@ -1,0 +1,1018 @@
+/* Obsidian Beige Theme - Comprehensive */
+/* Inspired by Instapaper's warm reading experience */
+
+/* ============================================
+   ROOT VARIABLES - LIGHT MODE (BEIGE)
+   ============================================ */
+.theme-light {
+  /* Base beige color palette */
+  --beige-primary: #fff9e7;
+  --beige-secondary: #ebe2d6;
+  --beige-hover: #e3d9ca;
+  --beige-border: #d4c9ba;
+  
+  /* Obsidian color variables - All beige */
+  --color-base-00: #fff9e7;
+  --color-base-05: #fff9e7;
+  --color-base-10: #fff9e7;
+  --color-base-20: #ebe2d6;
+  --color-base-25: #e3d9ca;
+  --color-base-30: #d4c9ba;
+  --color-base-35: #c5baa9;
+  --color-base-40: #b5a998;
+  --color-base-50: #9a9080;
+  --color-base-60: #7a7060;
+  --color-base-70: #5a5040;
+  --color-base-100: #1a1a1a;
+  
+  /* Background colors */
+  --bg-primary: #fff9e7;
+  --bg-primary-alt: #fff9e7;
+  --bg-secondary: #fff9e7;
+  --bg-secondary-alt: #fff9e7;
+  --background-modifier-border: #e3d9ca; /* this */
+  --background-modifier-border-hover: #d4c9ba;
+  --background-modifier-border-focus: #8b7355;
+  --background-modifier-error: #fff9e7;
+  --background-modifier-error-hover: #ebe2d6;
+  --background-modifier-success: #fff9e7;
+  --background-modifier-message: #fff9e7;
+  --background-modifier-form-field: #fff9e7;
+  --background-modifier-form-field-highlighted: #ebe2d6;
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
+  --background-modifier-hover: #ebe2d6;
+  --background-modifier-active-hover: #e3d9ca;
+
+--scrollbar-size: 10px;
+  
+  /* Text colors */
+  --text-normal: #1a1a1a;
+  --text-muted: #6b6b6b;
+  --text-faint: #9a9a9a;
+  --text-error: #b86b5e;
+  --text-accent: --text-link; /* this */
+  --text-accent-hover: #6d5a44;
+  --text-on-accent: #fff9e7;
+  --text-on-accent-inverted: #1a1a1a;
+  --text-selection: rgba(139, 115, 85, 0.15);
+  --text-link: #027db3;
+  
+  /* Interactive colors */
+  --interactive-normal: #fff9e7;
+  --interactive-hover: #ebe2d6;
+  --interactive-accent: #8b7355;
+  --interactive-accent-hover: #6d5a44;
+  --interactive-accent-rgb: 139, 115, 85;
+  --interactive-success: #7a9d7e;
+  
+  /* UI Element colors */
+  --titlebar-background: #fff9e7;
+  --titlebar-background-focused: #fff9e7;
+  --titlebar-text-color: #1a1a1a;
+  --titlebar-text-color-focused: #1a1a1a;
+  
+  /* Scrollbar */
+  --scrollbar-bg: #fff9e7;
+  --scrollbar-thumb-bg: #d4c9ba;
+  --scrollbar-active-thumb-bg: #c5baa9;
+  
+  /* Inputs */
+  --input-radius: 4px;
+  --input-shadow: none;
+  --input-shadow-hover: none;
+  
+  /* Ribbon */
+  --ribbon-background: #fff9e7;
+  --ribbon-background-collapsed: #fff9e7;
+  
+  /* Tab colors */
+  --tab-background-active: #fff9e7;
+  --tab-text-color: #6b6b6b;
+  --tab-text-color-active: #1a1a1a;
+  --tab-text-color-focused: #1a1a1a;
+  --tab-text-color-focused-active: #1a1a1a;
+  
+  /* Table colors */
+  --table-background: #fff9e7;
+  --table-border-color: #e3d9ca;
+  --table-header-background: #fff9e7;
+  --table-header-background-hover: #ebe2d6;
+  --table-row-background-hover: #ebe2d6;
+  --table-selection: rgba(139, 115, 85, 0.1);
+  
+  /* File browser */
+  --nav-item-background-hover: #ebe2d6;
+  --nav-item-background-active: rgba(139, 115, 85, 0.1);
+  --nav-item-color: #6b6b6b;
+  --nav-item-color-hover: #1a1a1a;
+  --nav-item-color-active: #8b7355;
+  --nav-item-weight-active: 500;
+  --nav-indentation-guide-color: #e3d9ca;
+  
+  /* Code */
+  --code-background: #ebe2d6;
+  --code-normal: #3d3d3d;
+  --code-comment: #9a9a9a;
+  
+  /* Canvas */
+  --canvas-background: #fff9e7;
+  --canvas-card-background: #fff9e7;
+  
+  /* Callouts */
+  --callout-bug: 184, 107, 94;
+  --callout-default: 139, 115, 85;
+  --callout-error: 184, 107, 94;
+  --callout-example: 139, 115, 85;
+  --callout-fail: 184, 107, 94;
+  --callout-important: 139, 115, 85;
+  --callout-info: 139, 115, 85;
+  --callout-question: 200, 154, 94;
+  --callout-success: 122, 157, 126;
+  --callout-summary: 139, 115, 85;
+  --callout-tip: 122, 157, 126;
+  --callout-todo: 139, 115, 85;
+  --callout-warning: 200, 154, 94;
+  --callout-quote: 139, 115, 85;
+
+ /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+
+  /* Border Radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+}
+
+/* ============================================
+   DARK MODE - UNCHANGED
+   ============================================ */
+.theme-dark {
+  --bg-primary: #000000;
+  --bg-secondary: #000000;
+  --bg-tertiary: #000000;
+  --background-primary: #000000;
+  --background-primary-alt: #000000;
+  --bg-primary-alt: #000000;
+  --background-secondary: #000000;
+  --bg-hover: #000000;
+  
+ /* Text */
+ --text-normal: #f2f2f2;
+ --text-muted: #b3b3b3;
+ --text-faint: #7a7a7a;
+
+   /* Links (pale blue) */
+   --text-link: #9ecbff;
+   --text-accent: #9ecbff;
+   --text-accent-hover: #cfe6ff;
+
+     /* UI */
+  --background-modifier-border: #111111;
+  --background-modifier-hover: #000000;
+
+  /* Code */
+  --code-background: #0a0a0a;
+
+  /* Tabs */
+  --tab-text-color: #b3b3b3;
+  --tab-text-color-active: #ffffff;
+}
+
+/* ============================================
+   COMPREHENSIVE UI ELEMENT TARGETING
+   ============================================ */
+
+/* Workspace backgrounds */
+.workspace-split.mod-root,
+.workspace-leaf,
+.workspace-leaf-content,
+.workspace-tabs,
+.workspace-tab-container,
+.workspace-tab-header-container,
+.workspace-tab-header-container-inner,
+.workspace-tab-header-spacer,
+.view-header,
+.view-content,
+.workspace-drawer,
+.workspace-drawer-inner {
+  background-color: var(--bg-primary) !important;
+}
+
+/* Tab styling */
+.workspace-tab-header {
+  background-color: var(--bg-primary) !important;
+  color: var(--tab-text-color) !important;
+}
+
+.workspace-tab-header.is-active {
+  background-color: var(--bg-primary) !important;
+  color: var(--tab-text-color-active) !important;
+}
+
+.workspace-tab-header:hover {
+  background-color: var(--background-modifier-hover) !important;
+}
+
+/* Sidebar backgrounds */
+.workspace-split.mod-left-split,
+.workspace-split.mod-right-split,
+.workspace-ribbon,
+.workspace-ribbon.mod-left,
+.workspace-ribbon.mod-right,
+.side-dock-ribbon,
+.side-dock-ribbon-tab {
+  background-color: var(--bg-primary) !important;
+}
+
+/* Hide vertical tree lines; indent files under folders further instead */
+body {
+  --nav-indentation-guide-width: 0;
+}
+.nav-folder-children .nav-file,
+.nav-folder-children .nav-folder {
+  margin-left: 1.25em;
+}
+
+/* File explorer */
+.nav-files-container,
+.nav-folder,
+.nav-file,
+.nav-folder-title-content,
+.nav-file-title-content,
+.tree-item-self,
+.tree-item-inner {
+  background-color: transparent !important;
+}
+
+.nav-folder-title:hover,
+.nav-file-title:hover {
+  background-color: var(--nav-item-background-hover) !important;
+}
+
+.nav-file-title.is-active {
+  background-color: var(--nav-item-background-active) !important;
+  color: var(--nav-item-color-active) !important;
+}
+
+/* Editor/Content areas */
+.markdown-preview-view,
+.markdown-source-view,
+.markdown-source-view.mod-cm6,
+.markdown-reading-view,
+.markdown-preview-section,
+.markdown-preview-sizer,
+.cm-editor,
+.cm-scroller,
+.cm-content,
+.cm-line {
+  background-color: var(--bg-primary) !important;
+}
+
+/* Modals and dialogs */
+.modal,
+.modal-bg,
+.modal-container,
+.modal-content,
+.prompt,
+.suggestion-container,
+.menu {
+  background-color: var(--bg-primary) !important;
+}
+
+/* Settings */
+.vertical-tab-header-group,
+.vertical-tab-content-container,
+.vertical-tab-content,
+.setting-item,
+.setting-item-control,
+.setting-item-info {
+  background-color: var(--bg-primary) !important;
+}
+
+/* Inputs and forms */
+input[type="text"],
+input[type="search"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+textarea,
+.search-input-container input {
+  background-color: var(--bg-primary) !important;
+  border: 1px solid var(--background-modifier-border) !important;
+}
+
+input:focus,
+textarea:focus {
+  background-color: var(--bg-primary) !important;
+  border-color: var(--background-modifier-border-focus) !important;
+}
+
+/* Buttons */
+button {
+  background-color: var(--bg-primary) !important;
+  border: 1px solid var(--background-modifier-border) !important;
+  color: var(--text-normal) !important;
+}
+
+button:hover {
+  background-color: var(--background-modifier-hover) !important;
+}
+
+button.mod-cta {
+  background-color: var(--interactive-accent) !important;
+  color: var(--text-on-accent) !important;
+  border: none !important;
+}
+
+button.mod-cta:hover {
+  background-color: var(--interactive-accent-hover) !important;
+}
+
+/* Dropdowns and selects */
+select,
+.dropdown {
+  background-color: var(--bg-primary) !important;
+  border: 1px solid var(--background-modifier-border) !important;
+}
+
+/* Status bar */
+.status-bar {
+  background-color: var(--bg-primary) !important;
+  border-top: 1px solid var(--background-modifier-border) !important;
+}
+
+/* Title bar */
+.titlebar {
+  background-color: var(--titlebar-background) !important;
+  border-bottom: 1px solid var(--background-modifier-border) !important;
+}
+
+/* View actions */
+.view-actions,
+.view-action {
+  background-color: transparent !important;
+}
+
+/* Search */
+.search-result-container,
+.search-results-children,
+.search-result-file-matches {
+  background-color: transparent !important;
+}
+
+/* Backlinks */
+.backlink-pane {
+  background-color: transparent !important;
+}
+
+/* Graph view */
+.graph-view {
+  background-color: var(--bg-primary) !important;
+}
+
+/* Canvas */
+.canvas-wrapper,
+.canvas-node,
+.canvas-node-container {
+  background-color: var(--bg-primary) !important;
+}
+
+/* Properties */
+.metadata-container,
+.metadata-property,
+.metadata-property-key,
+.metadata-property-value {
+  background-color: transparent !important;
+}
+
+/* Popovers */
+.popover,
+.tooltip {
+  background-color: var(--bg-primary) !important;
+  border: 1px solid var(--background-modifier-border) !important;
+}
+
+/* Notices */
+.notice {
+  background-color: var(--bg-primary) !important;
+  border: 1px solid var(--background-modifier-border) !important;
+}
+
+/* Progress bars */
+.progress-bar {
+  background-color: var(--background-modifier-hover) !important;
+}
+
+/* Sliders */
+input[type="range"] {
+  background-color: var(--background-modifier-hover) !important;
+}
+
+/* Horizontal tabs */
+.horizontal-tab-nav-item {
+  background-color: transparent !important;
+}
+
+.horizontal-tab-nav-item.is-active {
+  background-color: var(--background-modifier-hover) !important;
+}
+
+/* Community plugins/themes */
+.community-item,
+.community-modal-details {
+  background-color: var(--bg-primary) !important;
+}
+
+/* Workspace leaves */
+.workspace-leaf-resize-handle {
+  background-color: var(--background-modifier-border) !important;
+}
+
+/* Empty states */
+.empty-state {
+  background-color: transparent !important;
+}
+
+/* ============================================
+   TYPOGRAPHY & READING EXPERIENCE
+   ============================================ */
+body {
+  font-family: Times New Roman;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--text-normal);
+}
+
+.markdown-source-view .cm-content {
+  font-family: Times New Roman !important;
+}
+
+/* Headings */
+/* Headings - UNIFIED for both modes */
+.markdown-preview-view h1,
+.markdown-reading-view h1,
+.markdown-source-view.mod-cm6
+.cm-header-1 {
+  font-size: 2em;
+  font-weight: 700;
+  color: var(--text-normal);
+  border-bottom: 1px solid var(--background-modifier-border);
+  padding-bottom: 0.5em;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  font-family: Times New Roman !important;
+}
+
+.markdown-preview-view h2,
+.markdown-reading-view h2,
+.markdown-source-view.mod-cm6
+.cm-header-2 {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: var(--text-normal);
+  margin-top: 1.2em;
+  margin-bottom: 0.5em;
+  font-family: Times New Roman !important;
+}
+
+.markdown-preview-view h3,
+.markdown-reading-view h3,
+.markdown-source-view.mod-cm6
+.cm-header-3 {
+  font-size: 1.25em;
+  font-weight: 600;
+  color: var(--text-normal);
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  font-family: Times New Roman !important;
+}
+
+/* Smaller headings - h4, h5, h6 */
+.markdown-preview-view h4,
+.markdown-reading-view h4,
+.markdown-source-view.mod-cm6
+.cm-header-4 {
+  font-size: 1.1em;
+  font-weight: 600;
+  color: var(--text-normal);
+  margin-top: 0.8em;
+  margin-bottom: 0.5em;
+  font-family: "Times New Roman", serif !important;
+}
+
+.markdown-preview-view h5,
+.markdown-reading-view h5,
+.markdown-source-view.mod-cm6
+.cm-header-5 {
+  font-size: 1em;
+  font-weight: 600;
+  color: var(--text-normal);
+  margin-top: 0.6em;
+  margin-bottom: 0.4em;
+  font-family: "Times New Roman", serif !important;
+}
+
+.markdown-preview-view h6,
+.markdown-reading-view h6,
+.markdown-source-view.mod-cm6
+.cm-header-6 {
+  font-size: 0.95em;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-top: 0.6em;
+  margin-bottom: 0.4em;
+  font-family: "Times New Roman", serif !important;
+}
+
+/* List numbers and content in reading mode */
+.markdown-reading-view ol,
+.markdown-reading-view ul,
+.markdown-reading-view li {
+  font-family: "Times New Roman", serif !important;
+}
+
+/* Also target list markers specifically */
+.markdown-reading-view ol li::marker,
+.markdown-reading-view ul li::marker {
+  font-family: "Times New Roman", serif !important;
+}
+
+/* Nested list items */
+.markdown-reading-view ol ol,
+.markdown-reading-view ol ul,
+.markdown-reading-view ul ol,
+.markdown-reading-view ul ul {
+  font-family: "Times New Roman", serif !important;
+}
+
+.markdown-preview-view p,
+.markdown-reading-view p {
+  margin: 1em 0;
+  line-height: 1.6;
+  font-family: Times New Roman !important;
+}
+
+/* Links */
+a,
+.internal-link,
+.external-link,
+.cm-link {
+  color: var(--text-link) !important;
+  text-decoration: none;
+  font-family: Times New Roman;
+}
+
+a:hover,
+.internal-link:hover,
+.external-link:hover {
+  color: var(--text-link);
+  border-bottom-color: var(--text-accent);
+  font-family: Times New Roman;
+}
+
+/* Blockquotes */
+blockquote,
+.cm-quote {
+  border-left: 3px solid var(--interactive-accent);
+  padding-left: 1em;
+  margin: 1em 0;
+  color: var(--text-muted);
+  font-style: italic;
+  background-color: transparent;
+}
+
+/* Code blocks */
+code,
+.cm-inline-code {
+  background-color: var(--code-background);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: "Menlo", "Monaco", "Courier New", monospace;
+  font-size: 0.9em;
+}
+
+pre code {
+  background-color: transparent;
+  padding: 0;
+}
+
+pre {
+  background-color: var(--code-background);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 4px;
+  padding: 1em;
+  overflow-x: auto;
+}
+
+/* Lists */
+ul, ol {
+  padding-left: 2em;
+  margin: 1em 0;
+}
+
+li {
+  margin: 0.5em 0;
+}
+
+/* Tables */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1em 0;
+}
+
+th, td {
+  border: 1px solid var(--table-border-color);
+  padding: 0.5em 1em;
+  text-align: left;
+}
+
+th {
+  background-color: var(--table-header-background);
+  font-weight: 600;
+}
+
+tr:hover {
+  background-color: var(--table-row-background-hover);
+}
+
+/* ============================================
+   SCROLLBAR
+   ============================================ */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb-bg);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-active-thumb-bg);
+}
+
+/* ============================================
+   CALLOUTS
+   ============================================ */
+.callout {
+  background-color: var(--bg-primary);
+  border: 1px solid var(--background-modifier-border);
+  border-left-width: 3px;
+  border-radius: 4px;
+  padding: 1em;
+  margin: 1em 0;
+}
+
+/* ============================================
+   CANVAS
+   ============================================ */
+.canvas-node-content {
+  background-color: var(--bg-primary) !important;
+}
+
+.canvas-card {
+  background-color: var(--bg-primary) !important;
+}
+
+/* ============================================
+   PRINT STYLES
+   ============================================ */
+@media print {
+  .workspace-ribbon,
+  .workspace-tabs,
+  .status-bar,
+  .titlebar {
+    display: none;
+  }
+  
+  body {
+    background-color: white;
+  }
+}
+
+body .workspace-drawer-vault-switcher { 
+  background-color: var(--bg-primary) !important;
+}
+
+
+body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile .workspace-drawer-vault-switcher.has-active-menu {
+  background-color: var(--bg-primary) !important;
+}
+
+body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
+  background-color: var(--bg-secondary);
+}
+
+/* View header - file title and breadcrumb */
+.view-header-title,
+.view-header-title-container,
+.view-header-breadcrumb {
+  font-family: Times New Roman !important;
+}
+
+/* Remove ALL tab styling artifacts */
+.workspace-tab-header::before,
+.workspace-tab-header::after {
+  display: none !important;
+}
+
+/* Alternative: Dark tooltips for better contrast */
+.tooltip,
+.mod-tooltip {
+  background-color: rgba(0, 0, 0, 0.9) !important;
+  color: #ffffff !important;
+  border: none !important;
+}
+
+
+/* Tags - change from purple to beige/brown */
+.tag {
+  background-color: var(--code-background) !important;
+  color: var(--text-normal) !important;
+  border: 1px solid var(--background-modifier-border) !important;
+}
+
+/* Tag in text (inline tags) */
+.cm-tag,
+a.tag {
+  background-color: var(--code-background) !important;
+  color: var(--text-normal) !important;
+}
+
+/* Tag hover state */
+.tag:hover,
+.cm-tag:hover,
+a.tag:hover {
+  background-color: var(--background-modifier-hover) !important;
+  color: var(--text-normal) !important;
+}
+
+/* Tags in EDITING mode (CodeMirror) */
+.cm-hashtag,
+.cm-hashtag-begin,
+.cm-hashtag-end {
+  background-color: var(--code-background) !important;
+  color: var(--text-normal) !important;
+  border-radius: 4px;
+}
+
+/*
+    Floating Tab Header
+    With inline title enabled, it seems a waste to take up vertical space of the 'view header'
+    especially if you don't use the back/forward buttons or the breadcrumb, so this minifies
+    that interface into a float right toolbar.
+    https://github.com/replete/obsidian-minimal-theme-css-snippets
+*/
+
+.workspace-tab-header-container {
+  padding-top: 0px !important;
+  padding-bottom: 4px !important;
+  margin-top: 0 !important;
+  min-height: unset !important;
+  align-items: flex-start !important;
+  background: var(--bg-primary) !important;
+}
+
+.workspace-tab-header-container {
+  align-items: stretch !important;
+}
+.workspace-tab-header {
+  border-top-left-radius: 4px !important;
+  border-top-right-radius: 4px !important;
+  border-bottom-left-radius: 4px !important;
+  border-bottom-right-radius: 4px !important;
+  background-color: var(--bg-primary) !important; /* light gray */
+  color: #333 !important;
+  margin-right: 4px !important;
+}
+
+.workspace-tab-header::before,
+.workspace-tab-header::after {
+  display: none !important;
+}
+
+.workspace-tab-header.is-active {
+  background-color: var(--bg-hover) !important; /* slightly darker gray */
+  color: #000 !important;
+}
+
+.titlebar-button-container {
+  background-color: var(--bg-primary) !important;
+}
+
+
+/* Sidebar (File Explorer) font size */
+.nav-file-title-content,
+.nav-folder-title-content,
+.tree-item-self {
+  font-size: 15px !important; /* try 16–17px */
+  line-height: 1.5;
+  font-family: Times New Roman !important; /* optional, for consistency */
+}
+
+
+.theme-light .nav-folder:not(.is-collapsed) > .nav-folder-title,
+.theme-light .nav-folder:not(.is-collapsed) > .nav-folder-title:hover {
+  color: var(--primary-active) !important;
+  background-color: #e4dbc5 !important ;
+  border-radius: var(--radius-sm) !important;
+}
+
+
+/* Highlight active line in editor */
+.cm-active.cm-line {
+  background-color: var(--background-modifier-hover) !important;
+}
+
+/* Increase base font size */
+body {
+  font-family: Times New Roman;
+  font-size: 18px !important; /* was 15px, try 17-18px */
+  line-height: 1.6;
+  color: var(--text-normal);
+}
+
+/* Also increase in editor specifically */
+.markdown-source-view.mod-cm6 .cm-content,
+.markdown-preview-view,
+.markdown-reading-view {
+  font-size: 18px !important;
+}
+
+
+/* ============================================
+   INLINE FILE TITLE – FORCE TIMES NEW ROMAN
+   ============================================ */
+
+   .inline-title {
+    font-family: "Times New Roman" !important;
+    font-size: 36px !important;   /* match your H1 */
+    font-weight: 700 !important;
+    line-height: 1.3 !important;
+    color: var(--text-normal) !important;
+  }
+
+
+
+    .theme-dark a,
+    .theme-dark .internal-link,
+    .theme-dark .external-link {
+      color: var(--text-link) !important;
+      text-decoration: none;
+    }
+    
+    .theme-dark a:hover {
+      color: var(--text-accent-hover) !important;
+    }
+
+
+.theme-dark {
+  --background-modifier-border: #0d0d0d;
+} 
+
+
+/* ============================================
+   AMOLED FIX – SIDEBAR TOGGLE CORNERS
+   ============================================ */
+
+.theme-dark .sidebar-toggle-button {
+  background-color: #000000 !important;
+}
+
+
+.theme-dark .sidebar-toggle-button .clickable-icon {
+  background-color: #000000 !important;
+}
+
+
+/* ============================================
+   AMOLED MASTER OVERRIDE
+   ============================================ */
+
+.theme-dark {
+  --background-primary: #000000 !important;
+  --background-secondary: #000000 !important;
+  --background-secondary-alt: #000000 !important;
+  --background-tertiary: #000000 !important;
+  --background-modifier-cover: #000000 !important;
+}
+
+
+/* ============================================
+   ACTIVE NOTE = PALE BLUE
+   ============================================ */
+
+/* 1️⃣ Active file in sidebar */
+.theme-dark .nav-file-title.is-active,
+.theme-dark .nav-file-title.is-active .nav-file-title-content {
+  color: var(--text-link) !important;
+}
+
+/* 2️⃣ Active tab in tab bar */
+.theme-dark .workspace-tab-header.is-active .workspace-tab-header-inner-title {
+  color: var(--text-link) !important;
+}
+
+
+.theme-dark .workspace-tab-header:not(.is-active) 
+.workspace-tab-header-inner-title {
+  color: #ffffff !important;
+  opacity: 0.85;
+}
+
+/* ============================================
+   SIDEBAR FILES = WHITE (NOT GREY)
+   ============================================ */
+
+.theme-dark .nav-file-title-content,
+.theme-dark .nav-folder-title-content {
+  color: #ffffff !important;
+  opacity: 0.85 !important;
+}
+
+
+/* ============================================
+   SIDEBAR HOVER = PALE BLUE
+   ============================================ */
+
+.theme-dark .nav-file-title:hover .nav-file-title-content,
+.theme-dark .nav-folder-title:hover .nav-folder-title-content {
+  color: var(--text-link) !important;
+  opacity: 1 !important;
+}
+
+/* ============================================
+   UI BUTTON HOVER = PALE BLUE
+   ============================================ */
+
+.theme-dark .clickable-icon:hover,
+.theme-dark button:hover,
+.theme-dark .view-action:hover {
+  color: var(--text-link) !important;
+}
+
+/* ============================================
+   TAB HOVER = PALE BLUE
+   ============================================ */
+
+.theme-dark .workspace-tab-header:hover {
+  color: var(--text-link) !important;
+}
+
+/* ============================================
+   ACTIVE TAB = PALE BLUE
+   ============================================ */
+
+.theme-dark .workspace-tab-header.is-active {
+  color: var(--text-link) !important;
+}
+
+.theme-dark .workspace-tab-header,
+.theme-dark .clickable-icon,
+.theme-dark button {
+  transition: color 120ms ease;
+}
+
+
+
+/* ============================================
+   ICONS + TAB ICONS → PALE BLUE ON HOVER
+   ============================================ */
+
+.theme-dark .clickable-icon:hover svg,
+.theme-dark button:hover svg,
+.theme-dark .workspace-tab-header:hover svg {
+  stroke: var(--text-link) !important;
+}
+
+.theme-dark .workspace-tab-header.is-active svg {
+  stroke: var(--text-link) !important;
+  fill: var(--text-link) !important;
+}
+
+
+/* hover = pale blue */
+.theme-dark .workspace-tab-header:hover 
+.workspace-tab-header-inner-title {
+  color: var(--text-link) !important;
+}
+
+.theme-dark .cm-active.cm-line {
+  background-color: #151515bb !important;
+}
+
+
+.nav-file-title {
+  opacity: 0.85;
+}
+
